@@ -1,0 +1,4 @@
+E:/WorkSpace/Git Repo/game-engine/build/CMakeFiles/ALL_BUILD.dir
+E:/WorkSpace/Git Repo/game-engine/build/CMakeFiles/ZERO_CHECK.dir
+E:/WorkSpace/Git Repo/game-engine/build/Framework/Common/CMakeFiles/Common.dir
+E:/WorkSpace/Git Repo/game-engine/build/Empty/CMakeFiles/Empty.dir

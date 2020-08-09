@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\WorkSpace\Git Repo\game-engine\Framework\Common\BaseApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\WorkSpace\Git Repo\game-engine\Framework\Common\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\WorkSpace\Git Repo\game-engine\Framework\Common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0987B267-A606-3116-9CB9-D3E32809976D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

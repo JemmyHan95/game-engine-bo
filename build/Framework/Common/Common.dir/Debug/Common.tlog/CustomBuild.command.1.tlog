@@ -1,0 +1,10 @@
+^E:\WORKSPACE\GIT REPO\GAME-ENGINE\FRAMEWORK\COMMON\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/WorkSpace/Git Repo/game-engine" "-BE:/WorkSpace/Git Repo/game-engine/build" --check-stamp-file "E:/WorkSpace/Git Repo/game-engine/build/Framework/Common/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
