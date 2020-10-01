@@ -3,12 +3,18 @@
 #include <tchar.h>
 #include <stdint.h>
 
-#include <d3d11.h>
-#include <d3d11_1.h>
+#include <d3d12.h>
+#include "d3dx12.h"
+#include <DXGI1_4.h>
 #include <d3dcompiler.h>
 #include <DirectXMath.h>
 #include <DirectXPackedVector.h>
 #include <DirectXColors.h>
+
+#include <wrl/client.h>
+
+#include <string>
+#include <exception>
 
 using namespace DirectX;
 using namespace DirectX::PackedVector;
@@ -17,6 +23,10 @@ const uint32_t SCREEN_WIDTH = 960;
 const uint32_t SCREEN_HEIGHT = 480;
 
 // global declarations
+const uint32_t nFrameCount    = 2;
+const bool     bUseWarpDevice = true;
+D3D12_VIEWPORT g_ViewPort     = {0.0f, 0.0f, static_cast(nScreenWidth), static_cast(nScreenHeight)};
+D3D12_RECT     g_ScissorRect  = {0, 0};
 IDXGISwapChain *g_pSwapchain = nullptr;   // pointer to the swap chain interface
 ID3D11Device *g_pDev = nullptr;           // pointer to our Direct3D device interface
 ID3D11DeviceContext *g_pDevcon = nullptr; // pointer to our Direct3D device context
